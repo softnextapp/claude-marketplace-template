@@ -1,0 +1,38 @@
+name: validate-pr
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check for CRLF line endings
+        run: |
+          bad=$(grep -rlI $'\r' . \
+            --include="*.md" --include="*.json" --include="*.yaml" \
+            --include="*.yml" --include="*.tpl" --include="*.py" \
+            --include="*.js" --include="*.sh" --include="*.txt" \
+            | grep -v "^./.git/") || true
+          if [ -n "$bad" ]; then
+            echo "CRLF line endings detected in:"
+            echo "$bad"
+            echo ""
+            echo "Fix: dos2unix <file>  or  sed -i 's/\r//' <file>"
+            exit 1
+          fi
+          echo "OK: no CRLF line endings"
+
+      - name: Validate marketplace structure
+        run: python scripts/validate_marketplace.py

@@ -1,0 +1,27 @@
+# Forcer LF sur tous les fichiers texte. Les CRLF Windows cassent le parser
+# YAML du frontmatter SKILL.md et rendent les plugins invisibles dans Cowork.
+* text=auto eol=lf
+
+# Explicite pour les types critiques au chargement plugin
+*.md       text eol=lf
+*.json     text eol=lf
+*.yaml     text eol=lf
+*.yml      text eol=lf
+*.tpl      text eol=lf
+*.py       text eol=lf
+*.js       text eol=lf
+*.sh       text eol=lf
+*.txt      text eol=lf
+
+# Binaires (jamais convertir)
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.ico      binary
+*.docx     binary
+*.xlsx     binary
+*.pptx     binary
+*.pdf      binary
+*.zip      binary
+*.plugin   binary

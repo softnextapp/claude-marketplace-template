@@ -1,0 +1,36 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (in case any plugin scripts use it locally)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node (in case any plugin scripts use it locally)
+node_modules/
+
+# Build artifacts (we don't ship .plugin zips through Git)
+*.plugin
+*.zip
+release/
+releases/
+dist/
+
+# Local secrets — never commit
+.env
+.env.local
+*.secret
+
+# Claude Code — configuration locale (permissions accordées par poste)
+.claude/settings.local.json

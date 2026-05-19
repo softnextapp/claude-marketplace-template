@@ -1,0 +1,24 @@
+{
+  "name": "my-marketplace",
+  "owner": {
+    "name": "My Organization",
+    "email": "admin@myorg.example"
+  },
+  "plugins": [
+    {
+      "name": "deep-research",
+      "source": "./deep-research",
+      "description": "Recherche approfondie 3-sources (web search + projet + knowledge) qui produit un référentiel markdown structuré sur n'importe quel sujet technique."
+    },
+    {
+      "name": "fact-check",
+      "source": "./fact-check",
+      "description": "Pipeline de fact-checking générique en 3 étapes (extract-claims -> deep-verify -> verify-report) pour valider tout document à fortes assertions : PRD, slides, article, rapport, brief, doc technique, ou texte brut passé en paramètre."
+    },
+    {
+      "name": "research-and-verify",
+      "source": "./research-and-verify",
+      "description": "Orchestrateur non-interruptif du pipeline deep-research + fact-check. Une interview unique, puis exécution end-to-end jusqu'au rapport final filtré par seuil de confiance."
+    }
+  ]
+}

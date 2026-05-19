@@ -1,0 +1,7 @@
+{
+  "name": "research-and-verify",
+  "version": "0.1.0",
+  "description": "Orchestrateur non-interruptif du pipeline deep-research + fact-check. Une interview unique, puis exécution end-to-end jusqu'au rapport final filtré par seuil de confiance.",
+  "author": { "name": "My Organization" },
+  "license": "proprietary"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "deep-research",
+  "version": "0.1.0",
+  "description": "Recherche approfondie 3-sources (web search + projet + knowledge) qui produit un référentiel markdown structuré sur n'importe quel sujet technique.",
+  "author": { "name": "My Organization" },
+  "license": "proprietary"
+}

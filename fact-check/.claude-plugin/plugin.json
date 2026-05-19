@@ -1,0 +1,7 @@
+{
+  "name": "fact-check",
+  "version": "0.1.0",
+  "description": "Pipeline de fact-checking générique en 3 étapes (extract-claims -> deep-verify -> verify-report) pour valider tout document à fortes assertions : PRD, slides, article, rapport, brief, doc technique, ou texte brut passé en paramètre.",
+  "author": { "name": "My Organization" },
+  "license": "proprietary"
+}
