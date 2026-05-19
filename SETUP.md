@@ -4,7 +4,7 @@ Vous venez de créer un repo depuis ce template. Suivez ces étapes **dans l'ord
 
 Durée totale : **~25 minutes**.
 
-> ⚠️ **Ne pas activer la protection de branche `main` avant l'étape 6.** L'étape 4 fait un push direct sur `main` qui serait bloqué sinon.
+> ⚠️ **Ne pas activer la protection de branche `main` avant l'étape 7.** L'étape 5 fait un push direct sur `main` qui serait bloqué sinon.
 
 ---
 
